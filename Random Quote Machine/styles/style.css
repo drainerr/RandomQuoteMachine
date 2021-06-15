@@ -74,7 +74,10 @@ body #main-container #quote-box #bottom #new-quote {
   border-radius: 5px;
   color: white;
 }
-
+body #main-container #quote-box #bottom #new-quote:hover{
+ opacity:0.8;
+ cursor:pointer;
+}
 body #main-container #quote-box #bottom #tweet-quote {
   text-decoration: none;
   color: white;
@@ -84,7 +87,9 @@ body #main-container #quote-box #bottom #tweet-quote #twicon {
   font-size: 2.3em;
   color: #e74c3c;
 }
-
+body #main-container #quote-box #bottom #tweet-quote #twicon:hover{
+  opacity:0.8;
+}
 body #main-container #footer {
   padding-top: 1em;
   text-align: center;
