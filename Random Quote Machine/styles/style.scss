@@ -1,0 +1,70 @@
+@mixin anchors(){
+    text-decoration: none;
+    color:white;
+}
+
+$main-color:#e74c3c;
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body{
+    background-color:$main-color;
+    color:$main-color;  
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    font-family: 'Abel', sans-serif;
+    height:100%;
+    #main-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        #quote-box{
+            padding: 3em;
+            background-color:whitesmoke;
+            border-radius:5px;
+            width:35vw;
+            min-width:200px;
+        #text{
+            font-size:1.8em; 
+          //  color:$main-color;
+            margin-bottom:0.8em;
+            text-align:center;
+        }
+        #author{
+         //   color:$main-color;
+            display:flex;
+            justify-content: flex-end;
+            font-size:1.5em;
+            margin-bottom:1.5em;
+        }
+            #bottom{
+                display:flex;
+                justify-content:space-between;
+                flex-direction: row-reverse;
+                #new-quote{
+                    font-size:1em;
+          //          background-color: $main-color;
+                    border:none;
+                    border-radius:5px;
+                    color:white;          
+                }
+                #tweet-quote{
+                @include anchors();
+                    #twicon{
+                        font-size:2.3em;
+           //             color:$main-color;
+                    }
+                }
+            }
+        }
+        #footer{
+            padding-top:1em;
+            text-align:center;
+        }
+    }
+}

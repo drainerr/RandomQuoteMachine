@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+body {
+  background-color: #e74c3c;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Abel', sans-serif;
+  height: 100%;
+}
+
+body #main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+body #main-container #quote-box {
+  padding: 3em;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: 35vw;
+  min-width: 200px;
+}
+
+body #main-container #quote-box #text {
+  font-size: 1.8em;
+  color: #e74c3c;
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+
+body #main-container #quote-box #author {
+  color: #e74c3c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+body #main-container #quote-box #bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+body #main-container #quote-box #bottom #new-quote {
+  font-size: 1em;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+body #main-container #quote-box #bottom #tweet-quote {
+  text-decoration: none;
+  color: white;
+}
+
+body #main-container #quote-box #bottom #tweet-quote #twicon {
+  font-size: 2.3em;
+  color: #e74c3c;
+}
+
+body #main-container #footer {
+  padding-top: 1em;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
