@@ -75,6 +75,11 @@ body #main-container #quote-box #bottom #new-quote {
   color: white;
 }
 
+body #main-container #quote-box #bottom #new-quote:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
 body #main-container #quote-box #bottom #tweet-quote {
   text-decoration: none;
   color: white;
@@ -83,6 +88,10 @@ body #main-container #quote-box #bottom #tweet-quote {
 body #main-container #quote-box #bottom #tweet-quote #twicon {
   font-size: 2.3em;
   color: #e74c3c;
+}
+
+body #main-container #quote-box #bottom #tweet-quote #twicon:hover {
+  opacity: .8;
 }
 
 body #main-container #footer {

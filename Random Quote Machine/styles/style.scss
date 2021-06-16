@@ -51,13 +51,20 @@ body{
                     background-color: $main-color;
                     border:none;
                     border-radius:5px;
-                    color:white;          
+                    color:white; 
+                    &:hover{
+                        cursor:pointer;
+                        opacity:.8;
+                    }         
                 }
                 #tweet-quote{
                 @include anchors();
                     #twicon{
                         font-size:2.3em;
                         color:$main-color;
+                        &:hover{
+                            opacity:.8;
+                        }
                     }
                 }
             }
