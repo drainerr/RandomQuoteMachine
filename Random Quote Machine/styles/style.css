@@ -31,7 +31,8 @@ body #main-container #quote-box {
   padding: 3em;
   background-color: whitesmoke;
   border-radius: 5px;
-  width: 50vw;
+  width: auto;
+  max-width: 60vw;
   min-width: 200px;
 }
 
