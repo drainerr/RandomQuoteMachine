@@ -31,7 +31,7 @@ body #main-container #quote-box {
   padding: 3em;
   background-color: whitesmoke;
   border-radius: 5px;
-  width: 35vw;
+  width: 50vw;
   min-width: 200px;
 }
 
@@ -39,7 +39,6 @@ body #main-container #quote-box #text {
   font-size: 1.8em;
   color: #e74c3c;
   margin-bottom: 0.8em;
-  text-align: center;
 }
 
 body #main-container #quote-box #author {
