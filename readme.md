@@ -1,3 +1,3 @@
 # Pomodoro Timer
 
-<https://georgekvr.github.io/RandomQuoteMachine/ >
+<https://georgekvr.github.io/RandomQuoteMachine/>
