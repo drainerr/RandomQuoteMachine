@@ -3,7 +3,7 @@ const tweet = document.getElementById('tweet-quote');
 const text = document.getElementById('inaText');
 const author=document.getElementById('author');
 
-var colors=[
+const colors=[
     '#a2c39a',
     '#8daef4',
     '#e384a3',
@@ -23,7 +23,7 @@ var colors=[
     '#73A857'
 ];
 
-var quotes=[
+const quotes=[
 {
     id:1,
     quote: "The government is unresponsive to the needs of the little man. Under 5'7, it is impossible to get your congressman on the phone.",
@@ -87,8 +87,8 @@ var quotes=[
 ];
 
 
-var setColors = function(){
-    var color = Math.floor(Math.random() * colors.length);
+const setColors = function(){
+    const color = Math.floor(Math.random() * colors.length);
     document.body.style.backgroundColor = colors[color];
     document.getElementById('text').style.color = colors[color];
     document.getElementById('author').style.color = colors[color];
@@ -96,10 +96,10 @@ var setColors = function(){
     document.getElementById('twicon').style.color = colors[color];
 }
 
-var genQuote = function (){  
-    var randQuoteIndex = Math.floor(Math.random() * quotes.length);
-    var generateText = quotes[randQuoteIndex]['quote'];
-    var generateAuthor = quotes[randQuoteIndex]['author'];
+const genQuote = function (){  
+    const randQuoteIndex = Math.floor(Math.random() * quotes.length);
+    const generateText = quotes[randQuoteIndex]['quote'];
+    const generateAuthor = quotes[randQuoteIndex]['author'];
 
     setColors();
     text.innerText = generateText;
@@ -107,12 +107,12 @@ var genQuote = function (){
     
 };
 
-var share = function(){
-    var currentText = text.innerText;
-    var currentAuthor = author.innerText;
+const share = function(){
+    const currentText = text.innerText;
+    const currentAuthor = author.innerText;
     tweet.target="_blank";
     tweet.href="https://twitter.com/intent/tweet?text=" + encodeURIComponent('"' + currentText + '" '  +currentAuthor)
 }
 
-newQuote.onclick = genQuote;
-tweet.onclick = share;
+newQuote.addEventListener('click',genQuote) 
+tweet.addEventListener('click',share)
